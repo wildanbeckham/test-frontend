@@ -1,0 +1,96 @@
+/* Hero */
+#hero .container {
+  background-image: url("/public/images/hero.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+
+.shadow-fw {
+  text-shadow: 0 4px 4px #00000042;
+}
+
+/* Package */
+#package .icon-img {
+  aspect-ratio: 3/3;
+  background-size: contain;
+  width: 15%;
+}
+
+#package .col-package {
+  height: 14vh;
+}
+
+#package .card:hover {
+  border: 1px solid #ffce07;
+  transition: 1s;
+}
+
+#package .card:hover .icon-package {
+  display: block !important;
+}
+
+/* Portofolio */
+#porto .card:hover {
+  border: 1px solid rgb(255, 206, 7);
+  box-shadow: rgb(255, 206, 7) 1.95px 1.95px 2.6px;
+  transition: 1s;
+}
+
+#porto .card {
+  transition: 1s;
+  height: 58vh;
+}
+
+/* Testimoni */
+#testi .ava {
+  width: 7%;
+  aspect-ratio: 2/2;
+}
+
+#testi {
+  background-image: url("/public/images/testi-bg.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 25px 70px;
+}
+
+/* Footer */
+#footer ul {
+  list-style-type: none;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #00000042;
+  transition: 0.5s;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  color: #ffce07;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 900px) {
+  /* Hero */
+  #hero .container {
+    margin-bottom: 0 !important;
+  }
+
+  /* Package */
+  #package .col-package {
+    height: 100%;
+  }
+
+  /* Icon */
+  #icon .pembungkus {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  /* Portofolio */
+  #porto .card {
+    height: 100%;
+  }
+}
